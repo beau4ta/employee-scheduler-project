@@ -1,0 +1,26 @@
+[{
+        "first_name": "Sal",
+        "last_name": "Doe",
+        "email": "sal@hotmail.com",
+        "password": "Password12345",
+        "is_manager": true,
+        "manager_id": null
+    },
+    {
+        "first_name": "Lernantino",
+        "last_name": "Doe",
+        "email": "lernantino@gmail.com",
+        "password": "Password12345!",
+        "is_manager": "false",
+        "manager_id": 1
+
+    },
+    {
+        "first_name": "Amiko",
+        "last_name": "Doe",
+        "email": "amiko2k20@aol.com",
+        "password": "Password12345!",
+        "is_manager": false,
+        "manager_id": 1
+    }
+]
