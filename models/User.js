@@ -3,9 +3,9 @@ const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
 class User extends Model {
-    /*    checkPassword(loginPw) {
-           return bcrypt.compareSync(loginPw, this.password);
-       } */
+    checkPassword(loginPw) {
+        return bcrypt.compareSync(loginPw, this.password);
+    }
 }
 
 User.init({
@@ -34,13 +34,13 @@ User.init({
     password: {
         type: DataTypes.STRING,
         allowNull: false,
-        /*   validate: {
-              validatePassword: function(password) {
-                  if (!(/^(?=.[a-z])(?=.[A-Z])(?=.\d)(?=.[@$!%?&])[A-Za-z\d@$!%?&]{8}$/.test(password))) {
-                      throw new Error('The password must contain at least 8 characters including at least one uppercase, one lowercase, one number and one special character.');
-                  }
-              }
-          }, */
+        validate: {
+            validatePassword: function(password) {
+                if (!(/^(?=.[a-z])(?=.[A-Z])(?=.\d)(?=.[@$!%?&])[A-Za-z\d@$!%?&]{8}$/.test(password))) {
+                    throw new Error('The password must contain at least 8 characters including at least one uppercase, one lowercase, one number and one special character.');
+                }
+            }
+        },
     },
     is_manager: {
         type: DataTypes.BOOLEAN,
@@ -52,16 +52,16 @@ User.init({
     }
 
 }, {
-    /*  hooks: {
-         beforeCreate: async(newUserData) => {
-             newUserData.password = await bcrypt.hash(newUserData.password, 10);
-             return newUserData;
-         },
-         beforeUpdate: async(updatedUserData) => {
-             updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
-             return updatedUserData;
-         },
-     }, */
+    hooks: {
+        beforeCreate: async(newUserData) => {
+            newUserData.password = await bcrypt.hash(newUserData.password, 10);
+            return newUserData;
+        },
+        beforeUpdate: async(updatedUserData) => {
+            updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
+            return updatedUserData;
+        },
+    },
     sequelize,
     timestamps: false,
     freezeTableName: true,

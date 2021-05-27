@@ -15,7 +15,6 @@ const seedDatabase = async() => {
     for (const work of workData) {
         await Work.create({
             ...work,
-            user_id: users[Math.floor(Math.random() * users.length)].id,
         });
     }
 
