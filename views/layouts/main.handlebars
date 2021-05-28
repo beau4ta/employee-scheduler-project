@@ -10,6 +10,7 @@
     />
     <link rel="stylesheet" href="/public/css/jass.css" />
     <link rel="stylesheet" href="/public/css/styles.css" />
+     <link rel="stylesheet" href="./public/css/signup.css"/>
   </head>
 
   <body>
@@ -37,11 +38,25 @@
           </ul>
         </div>
       </div>
+      {{#if logged_in}}
+        <button class="no-button" id="logout">logout</button>
+        {{/if}}
     </nav>
 
     <main>
         {{{ body }}}
     </main>
 
+    <footer>
+        <h3 class="special-thanks">
+            Special thanks to <a href="https://github.com/beau4ta">Beau Fortier</a>, 
+            <a href="https://github.com/Kamille-Y">Kamille Young</a>, 
+            <a href="https://github.com/noahhelton98">Noah Helton</a>, and 
+            <a href="https://github.com/vickphat">Vick Phat!</a>
+            </h3>
+    </footer>
+
+
+    <script src="/public/js/login.js"
      </body>
 </html>
