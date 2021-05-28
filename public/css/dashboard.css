@@ -1,0 +1,37 @@
+.dash-container{
+    display: flex;
+    justify-content: center;
+}
+
+.dash-header{
+    text-align: center;
+    border: solid black ;
+    border-radius: 10px;
+    width: 40%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+
+.view-btn{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    margin: 10px;
+}
+
+.edit-btn{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    margin: 10px;
+}
