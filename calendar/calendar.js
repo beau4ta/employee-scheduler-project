@@ -1,43 +1,14 @@
 var p = MindFusion.Scheduling;
+// create a new instance of the calendar
+calendar = new p.Calendar(document.getElementById("calendar"));
 
-//create a new calendar instance
-var calendar = new p.Calendar(document.getElementById("calendar"));
-
-
-calendar.selectionEnd.addEventListener(handleSelection);
-calendar.headerClick.addEventListener(handleHeaderClick);
-
-//visualize the calendar
 calendar.render();
-function handleHeaderClick(sender, args)
-{
-	if(sender.currentView === p.CalendarView.Timetable)
-	{
-		sender.date = sender.timetableSettings.dates.items()[0];
-		sender.currentView = p.CalendarView.SingleMonth;
-	}
-}
 
-function handleSelection(sender, args)
-{
-	if(sender.currentView === p.CalendarView.SingleMonth)
-	{
-		//cancel the default behavior
-		args.cancel = true;
-		
-		var start = args.startTime;
-		var end = args.endTime;
-		
-		//clear all dates from the timetable
-		sender.timetableSettings.dates.clear();
-		
-		while(start < end)
-		{
-			sender.timetableSettings.dates.add(start);
-			start = p.DateTime.addDays(start, 1);
-			
-		}
-		
-		sender.currentView = p.CalendarView.Timetable;
-	}
-}
+// set the view to WeekRange
+calendar.currentView = CalendarView.WeekRange;
+
+// renders a single week
+calendar.weekRangeSettings.weekStyle = p.WeekRangeViewStyle.SingleWeek;
+calendar.weekRangeSettings.headerStyle = p.HorizontalHeaderStyle.None;
+calendar.weekRangeSettings.visibleRows = 5;
+ 

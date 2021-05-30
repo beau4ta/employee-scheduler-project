@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./public/css/jass.css" />
     <link rel="stylesheet" href="./public/css/signup.css"/>
+    <link rel="stylesheet" href="./public/css/dashboard.css"/>
     <link rel="stylesheet" href="./public/css/styles.css" />
 
 </head>
@@ -30,47 +31,14 @@
       </div>
     </nav>
 
-    <div class="row form-flex">
-      <div class="row-1">
-          <div class="welcome-card">
-            <h1 class="welcome-title">Welcome to the Employee Scheduler!</h1>
-          </div>
+    <div class="dash-container">
+        <div class="dash-header">Welcome {{name}}!</div>
+    </div>
 
-        <div class="login-header">
-          <h2 class="login-title">Log in to your account!</h2>
-        </div>
-      </div>
-
-      <div class="form-div">
-        <form class="login-form">
-          <div class="mb-3 email">
-            <label for="exampleInputEmail1" class="form-label"
-              >Email address</label
-            >
-            <input
-              type="email"
-              class="form-email"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-            />
-          </div>
-          <div class="mb-3 password">
-            <label for="exampleInputPassword1" class="form-label"
-              >Password</label
-            >
-            <input
-              type="password"
-              class="form-password"
-              id="exampleInputPassword1"
-            />
-          </div>
-          <div class="btn-container">
-          <button type="submit" class="login-btn">Log in!</button>
-        </div>
-          <p class="sign-up">Don't have an account?<a class="sign-up-link"> Sign up!</a></p>
-                        </form>
-            </div>
-        </div>
+    <div class="button-container">
+        <button class="view-btn">View Schedule</button>
+        <button class="edit-btn">Edit Schedule</button>
+    </div>
 
         <footer>
             <h3 class="special-thanks">

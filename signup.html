@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Employee Scheduler</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./public/css/jass.css" />
+    <link rel="stylesheet" href="./public/css/jass.css"/>
+    <link rel="stylesheet" href="./public/css/styles.css"/>
     <link rel="stylesheet" href="./public/css/signup.css"/>
-    <link rel="stylesheet" href="./public/css/styles.css" />
-
 </head>
 
 <body>
@@ -30,19 +29,25 @@
       </div>
     </nav>
 
-    <div class="row form-flex">
-      <div class="row-1">
-          <div class="welcome-card">
-            <h1 class="welcome-title">Welcome to the Employee Scheduler!</h1>
-          </div>
-
-        <div class="login-header">
-          <h2 class="login-title">Log in to your account!</h2>
-        </div>
+<div class="signup-container">
+    <div class="signup-header">
+        <h2 class="signup-title">Sign up below!</h2>
       </div>
+    </div>
 
-      <div class="form-div">
+    <div class="form-div-2">
         <form class="login-form">
+          <div class="mb-3 user">
+            <label for="exampleInputUser1" class="form-label"
+              >Username</label
+            >
+            <input
+              type="username"
+              class="form-user"
+              id="exampleInputUser1"
+              aria-describedby="userHelp"
+            />
+          </div>
           <div class="mb-3 email">
             <label for="exampleInputEmail1" class="form-label"
               >Email address</label
@@ -65,12 +70,10 @@
             />
           </div>
           <div class="btn-container">
-          <button type="submit" class="login-btn">Log in!</button>
+          <button type="submit" class="login-btn">Sign up!</button>
         </div>
-          <p class="sign-up">Don't have an account?<a class="sign-up-link"> Sign up!</a></p>
-                        </form>
-            </div>
-        </div>
+        </form>
+</div>
 
         <footer>
             <h3 class="special-thanks">
@@ -80,7 +83,6 @@
                 <a href="https://github.com/vickphat">Vick Phat!</a>
                 </h3>
         </footer>
-    
 </body>
 
 </html>
