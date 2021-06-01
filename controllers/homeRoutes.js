@@ -90,6 +90,11 @@ router.get('/schedule', withAuth, async (req, res) => {
     }
   });
 
+  // Sign-up page
+router.get('/signup', (req, res) => {
+
+  res.render('signup');
+});
 
 // If the user is already logged in, redirect the request to another route
 router.get('/home', (req, res) => {
