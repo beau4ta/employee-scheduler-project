@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -104,3 +105,7 @@ dist
 .tern-port
 node_modules
 node_modules
+=======
+node_modules
+.env
+>>>>>>> af2aa7fcd405c288021aa9f1b5c947af5ee1e176
