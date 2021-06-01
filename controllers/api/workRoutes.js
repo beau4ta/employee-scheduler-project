@@ -16,7 +16,7 @@ router.post('/', withAuth, async(req, res) => {
     }
 });
 
-router.put()
+// router.put()
 
 
 router.delete('/:id', withAuth, async(req, res) => {
