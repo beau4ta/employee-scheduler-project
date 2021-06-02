@@ -1,65 +1,25 @@
-const breakTask = document.getElementById('break');
-const gymTask = document.getElementById('gym');
-const studyTask = document.getElementById('study');
-const tvTask = document.getElementById('tv');
-const friendsTask = document.getElementById('friends');
-const workTask = document.getElementById('work');
+
 const deselectBtn = document.getElementById('deselect');
-const taskContainer = document.querySelector('.task__container');
-const scheduleContainer = document.querySelector('.schedule__container');
+const blockContainer = document.querySelector('.blockContainer');
+const scheduleContainer = document.querySelector('.schedule_container');
 const resetBtn = document.querySelector('.deleteBtn');
 const popUp = document.querySelector('.pop-up__container');
-const noBtn = document.getElementById('btn__no');
-const yesBtn = document.getElementById('btn__yes');
+const noBtn = document.getElementById('btn_no');
+const yesBtn = document.getElementById('btn_yes');
 
 let selectedColor, active;
 
 //Event Listeners
-taskContainer.addEventListener('click', selectTask);
+blockContainer.addEventListener('click', selectblock);
 scheduleContainer.addEventListener('click', setColors);
-deselectBtn.addEventListener('click', resetTasks);
+deselectBtn.addEventListener('click', resetblocks);
 resetBtn.addEventListener('click',openPopup);
 noBtn.addEventListener('click', closePopup);
-yesBtn.addEventListener('click', deleteTasks);
-
-// Tasks click  (3)
-function selectTask (e){
-    resetTasks()
-
-    taskColor = e.target.style.backgroundColor;
-
-    switch(e.target.id){
-        case 'break':
-            activeTask(breakTask, taskColor);
-            icon = '<i class="fas fa-couch"></i>';
-            break
-        case 'gym':
-            activeTask(gymTask, taskColor);
-            icon = '<i class="fas fa-dumbbell"></i>';
-            break
-        case 'study':
-            activeTask(studyTask, taskColor);
-            icon = '<i class="fas fa-book"></i>';
-            break
-        case 'tv':
-            activeTask(tvTask, taskColor);
-            icon = '<i class="fas fa-tv"></i>';
-            break
-        case 'friends':
-            activeTask(friendsTask, taskColor);
-            icon = '<i class="fas fa-users"></i>';
-            break
-        case 'work':
-            activeTask(workTask, taskColor);
-            icon = '<i class="fas fa-briefcase"></i>';
-            break
-    }
-
-};
+yesBtn.addEventListener('click', deleteblocks);
 
 // Set colors for schedule (4)
 function setColors (e){
-    if(e.target.classList.contains('task') && active === true){
+    if(e.target.classList.contains('block') && active === true){
         e.target.style.backgroundColor = selectedColor;
         e.target.innerHTML = icon;
     }else if(e.target.classList.contains('fas') && active === true){
@@ -68,11 +28,11 @@ function setColors (e){
     }
 };
 
-// Active task (1)
-function activeTask(task, color){
-    task.classList.toggle('selected');
+// Active block (1)
+function activeblock(block, color){
+    block.classList.toggle('selected');
 
-    if(task.classList.contains('selected')){
+    if(block.classList.contains('selected')){
         active = true;
         selectedColor = color;
         return selectedColor;
@@ -81,20 +41,20 @@ function activeTask(task, color){
     }
 }
 
-// Reset tasks (2)
-function resetTasks(){
-    const allTasks = document.querySelectorAll('.task__name');
+// Reset blocks (2)
+function resetblocks(){
+    const allblocks = document.querySelectorAll('.block__name');
 
-    allTasks.forEach((item)=>{
-        item.className = 'task__name';
+    allblocks.forEach((item)=>{
+        item.className = 'block__name';
     })
 }
 
-// Delete tasks
-function deleteTasks(){
-    const tasks = document.querySelectorAll('.task');
+// Delete blocks
+function deleteblocks(){
+    const blocks = document.querySelectorAll('.block');
 
-    tasks.forEach((item)=>{
+    blocks.forEach((item)=>{
         item.innerHTML = '';
         item.style.backgroundColor = 'white';
     })

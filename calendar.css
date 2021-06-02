@@ -23,22 +23,23 @@ h1,h3{
     margin-bottom: 20px;
 }
 
-/* TASKS CONTAINER */
-.task__container{
+/* blockS CONTAINER */
+.blockContainer{
     display: flex;
     margin-bottom: 3rem;
-    /* background-color: brown; */
+
+    /* background-color */
     padding: 10px;
 }
 
-.task__container .task__name{
+.blockContainer .block__name{
     padding: 10px;
     margin: 0 10px;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.task__name.selected{
+.block__name.selected{
     box-shadow:0px 0px 0px 2px black inset;
 }
 
@@ -49,14 +50,14 @@ h1,h3{
 
 
 /* SCHEDULE DESIGN */
-.schedule__container{
+.schedule_container{
     background: linear-gradient(#ebf4f5, #b5c6e0);
     display: flex;
     flex-direction: column;
     padding: 1rem;
 }
 
-.days__container{
+.daysContainer{
     display: flex;
 }
 
@@ -76,7 +77,7 @@ h1,h3{
     margin: 2px;
 }
 
-.part__day{
+.dayBlock{
     display: flex;
 }
 
@@ -92,7 +93,7 @@ h1,h3{
     margin: 2px;
 }
 
-.task{
+.block{
     background-color: white;
     height: 70px;
     width: 100px;
@@ -102,6 +103,13 @@ h1,h3{
     justify-content: center;
     align-items: center;
     font-size: 2rem;
+}
+
+.block:hover{
+    width: 200px;
+    height: 140px;
+    
+    background-color: #ebf4f5
 }
 
 /* Reset Button */
