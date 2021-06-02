@@ -40,7 +40,7 @@ router.get('/user/:id', async (req, res) => {
 
         const work = workData.get({ plain: true });
 
-        res.render('calender', {
+        res.render('calendar', {
             ...work,
             logged_in: req.session.logged_in
         });
