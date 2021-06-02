@@ -1,52 +1,74 @@
-<div class="jumbotron jumbotron-fluid bg-info text-light">
-      <div class="container text-center">
-        <h1>
-          Team Schedule
-        </h1>
-      </div>
-    </div>
+<body>
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-6">
-          <h3>Employee Schedule</h3>
-          <br />
-          <form id="assignments">
-            <div class="team row">
-              <label for="assignments" class="col-sm-4 col-form-label"
-                >Employee Name:
-              </label>
-              <div class="col-sm-8">
-                <input type="text" class="form-control" id="skill-name" />
-              </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="well-block">
+                    <div class="well-title">
+                        <h2>Schedule an Employee</h2>
+                    </div>
+                    <form>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label" for="name">Employee's First Name</label>
+                                <input id="name" name="name" type="text" placeholder="Jane" class="form-control input-md">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <div class="form-group">
+                                    <label class="control-label" for="name">Employee's Last Name</label>
+                                    <input id="name" name="name" type="text" placeholder="Doe" class="form-control input-md">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label" for="time">Preferred Time</label>
+                                <select id="time" name="time" class="form-control">
+                                        <option value="8:00 to 9:00">8:00 to 9:00</option>
+                                        <option value="9:00 to 10:00">9:00 to 10:00</option>
+                                        <option value="10:00 to 1:00">10:00 to 1:00</option>
+                                        <option value="8:00 to 9:00">8:00 to 9:00</option>
+                                        <option value="9:00 to 10:00">9:00 to 10:00</option>
+                                        <option value="10:00 to 1:00">10:00 to 1:00</option>
+                                    </select>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="control-label" for="appointmentfor">Work Type</label>
+                                <select id="worktype" name="worktype" class="form-control">
+                                        <option value="Service#1">handlebars</option>
+                                        <option value="Service#2">handlebars#2</option>
+                                        <option value="Service#3">handlebars#3</option>
+                                        <option value="Service#4">handlebars#4</option>
+                                    </select>
+                            </div>
+                        </div>
+
+                </div>
+                </form>
             </div>
-            <div class="form-group row">
-              <label for="date" class="col-sm-4 col-form-label">Date: </label>
-              <div class="col-sm-8">
-                <input type="text" class="form-control" id="datepicker" autocomplete="off" />
-              </div>
-            <div class="form-group row">
-              <label for="Time" class="col-sm-4 col-form-label">Time: </label>
-              <div class="col-sm-8">
-                <input type="text" class="form-control" id="datepicker" autocomplete="off" />
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="assignment" class="col-sm-4 col-form-label"> Work Assignments: </label>
-              <div class="col-sm-8">
-                <input type="text" class="form-control" id="datepicker" autocomplete="off" />
-              </div>
-            </div>
-            <button type="submit" value="Submit" class="btn btn-info">
-              Submit
-            </button>
-          </form>
         </div>
-        <div class="col-6">
-            <!-- In the futur we add job qualifications -->
-            
-          <h3>Permissions/ Credential:</h3>
-          <br />
-          <ul class="list-group" id="skills-list"></ul>
+        <div class="bootstrap-iso">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <form method="post">
+                            <div class="form-group">
+                                <label class="control-label" for="date">Date</label>
+                                <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text" />
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+        <div class="col-md-12">
+            <div class="form-group">
+                <button type="button" class="btn btn-primary">Schedule Employee</button>
+            </div>
+        </div>
+</body>
