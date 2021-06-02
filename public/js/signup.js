@@ -1,4 +1,4 @@
-const signupForm = async (event) => {
+const signupForm = async(event) => {
     event.preventDefault();
 
     const first = $('.form-first').val().trim();
@@ -12,13 +12,13 @@ const signupForm = async (event) => {
           body: JSON.stringify({ first, last, email, password }),
           headers: { 'Content-Type': 'application/json' },
         });
-    
+
         if (response.ok) {
-          document.location.replace('/dashboard');
+            document.location.replace('/dashboard');
         } else {
-          alert(response.statusText);
+            alert(response.statusText);
         }
-      }
+    }
 };
 
 $('.signup-btn').on('click', signupForm);
