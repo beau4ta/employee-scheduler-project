@@ -31,6 +31,24 @@
     flex-direction: column;
 }
 
+.first{
+    display: flex;
+    flex-direction: column;
+}
+
+.last{
+    display: flex;
+    flex-direction: column;
+}
+
 .form-user{
     height: 35px;
+}
+
+.signup-btn{
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    width: 25%;
+    height: 50px;
 }

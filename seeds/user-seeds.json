@@ -11,7 +11,7 @@
         "last_name": "Doe",
         "email": "lernantino@gmail.com",
         "password": "Password12345!",
-        "is_manager": "false",
+        "is_manager": false,
         "manager_id": 1
 
     },
