@@ -1,23 +1,24 @@
-const signupForm = async (event) => {
+const signupForm = async(event) => {
     event.preventDefault();
 
-    const username = $('.form-user').val().trim();
+    const first = $('.form-first').val().trim();
+    const last = $('.form-last').val().trim();
     const email = $('.form-email').val().trim();
     const password = $('.form-password').val().trim();
 
-    if (username && email && password) {
-        const response = await fetch('/api/users', {
+    if (first && last && email && password) {
+        const response = await fetch('/api/users/', {
           method: 'POST',
-          body: JSON.stringify({ username, email, password }),
+          body: JSON.stringify({ first, last, email, password }),
           headers: { 'Content-Type': 'application/json' },
         });
-    
+
         if (response.ok) {
-          document.location.replace('/dashboard');
+            document.location.replace('/dashboard');
         } else {
-          alert(response.statusText);
+            alert(response.statusText);
         }
-      }
+    }
 };
 
 $('.signup-btn').on('click', signupForm);
