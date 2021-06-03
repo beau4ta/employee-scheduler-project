@@ -1,8 +1,8 @@
-const signupForm = async(event) => {
+const signupForm = async (event) => {
     event.preventDefault();
 
-    const first = $('.form-first').val().trim();
-    const last = $('.form-last').val().trim();
+    const first_name = $('.form-first').val().trim();
+    const last_name = $('.form-last').val().trim();
     const email = $('.form-email').val().trim();
     const password = $('.form-password').val().trim();
 
@@ -22,3 +22,4 @@ const signupForm = async(event) => {
 };
 
 $('.signup-btn').on('click', signupForm);
+
