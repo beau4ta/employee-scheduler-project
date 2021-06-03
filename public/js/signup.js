@@ -6,12 +6,11 @@ const signupForm = async (event) => {
     const email = $('.form-email').val().trim();
     const password = $('.form-password').val().trim();
 
-    if (first_name && last_name && email && password) {
+    if (first && last && email && password) {
         const response = await fetch('/api/users', {
-            method: 'POST',
-            body: JSON.stringify({ first_name, last_name, email, password }),
-
-            headers: { 'Content-Type': 'application/json' },
+          method: 'POST',
+          body: JSON.stringify({ first, last, email, password }),
+          headers: { 'Content-Type': 'application/json' },
         });
 
         if (response.ok) {
