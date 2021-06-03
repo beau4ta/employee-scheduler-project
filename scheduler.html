@@ -1,0 +1,63 @@
+gt<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid bg-info text-light">
+      <div class="container text-center">
+        <h1>
+          Team Schedule
+        </h1>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-6">
+          <h3>Employee Schedule</h3>
+          <br />
+          <form id="assignments">
+            <div class="team row">
+              <label for="assignments" class="col-sm-4 col-form-label"
+                >Employee Name:
+              </label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" id="skill-name" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="date" class="col-sm-4 col-form-label">Date: </label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" id="datepicker" autocomplete="off" />
+              </div>
+            <div class="form-group row">
+              <label for="Time" class="col-sm-4 col-form-label">Time: </label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" id="datepicker" autocomplete="off" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="assignment" class="col-sm-4 col-form-label"> Work Assignments: </label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" id="datepicker" autocomplete="off" />
+              </div>
+            </div>
+            <button type="submit" value="Submit" class="btn btn-info">
+              Submit
+            </button>
+          </form>
+        </div>
+        <div class="col-6">
+            <!-- In the futur we add job qualifications -->
+            
+          <h3>Permissions/ Credential:</h3>
+          <br />
+          <ul class="list-group" id="skills-list"></ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
