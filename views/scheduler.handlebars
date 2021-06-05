@@ -8,41 +8,41 @@
                     <form>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label class="control-label" for="name">Employee's First Name</label>
-                                <input id="name" name="name" type="text" placeholder="Jane" class="form-control input-md">
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="form-group">
                                 <div class="form-group">
-                                    <label class="control-label" for="name">Employee's Last Name</label>
-                                    <input id="name" name="name" type="text" placeholder="Doe" class="form-control input-md">
+                                    <label class="control-label" for="name">Employee's IDe</label>
+                                    <input id="user_id" name="user_id" type="text" placeholder="2" class="form-control input-md">
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                     <div class="col-md-6">
                             <div class="form-group">
-                                <label class="control-label" for="time">Preferred Time</label>
-                                <select id="time" name="time" class="form-control">
-                                        <option value="8:00 to 9:00">8:00 to 9:00</option>
-                                        <option value="9:00 to 10:00">9:00 to 10:00</option>
-                                        <option value="10:00 to 1:00">10:00 to 1:00</option>
-                                        <option value="8:00 to 9:00">8:00 to 9:00</option>
-                                        <option value="9:00 to 10:00">9:00 to 10:00</option>
-                                        <option value="10:00 to 1:00">10:00 to 1:00</option>
+                                <label class="control-label" for="start_time">Start Time</label>
+                                <select id="start_time" name="start_time" class="form-control">
+                                        <option value="8:00 to 12:00">8:00</option>
+                                        <option value="12:00 to 2:00">12:00 </option>
+                                        <option value="2:00 to 6:00">2:00</option>
+                                        <option value="6:00 to 9:00">6:00</option>
+                                        <option value="9:00 to 11:00">9:00</option>
                                     </select>
                             </div>
                         </div>
-                        <div class="col-md-12">
+                        </disv>
+                        <div class="col-md-6">
                             <div class="form-group">
-                                <label class="control-label" for="appointmentfor">Work Type</label>
-                                <select id="worktype" name="worktype" class="form-control">
-                                        <option value="Service#1">handlebars</option>
-                                        <option value="Service#2">handlebars#2</option>
-                                        <option value="Service#3">handlebars#3</option>
-                                        <option value="Service#4">handlebars#4</option>
+                                <label class="control-label" for="end_time">End Time</label>
+                                <select id="end_time" name="end_time" class="form-control">
+                                        <option value="12:00">12:00</option>
+                                        <option value="2:00">2:00</option>
+                                        <option value="6:00">6:00</option>
+                                        <option value="9:00">9:00</option>
+                                        <option value="11:00">11:00</option>
                                     </select>
+                            </div>
+                        </div>
+                    <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label" for="name">Work type</label>
+                                <input id="work_type" name="work_type" type="text" placeholder="Server" class="form-control input-md">
                             </div>
                         </div>
 
@@ -65,8 +65,15 @@
                 </div>
             </div>
         </div>
+
+        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label" for="name">Notes</label>
+                                <input id="notes" name="name" type="text" placeholder="Serve tables in zone 5" class="form-control input-md">
+                            </div>
+                        </div>
         <div class="col-md-12">
             <div class="form-group">
-                <button type="button" class="btn btn-primary">Schedule Employee</button>
+                <button type="button" class="scheduler-btn">Schedule Employee</button>
             </div>
         </div>

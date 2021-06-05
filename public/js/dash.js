@@ -1,11 +1,13 @@
 const viewCalendar = () => {
     document.location.replace('/calendar');
+    console.log('hi')
 };
 
-$('.viewbtn').on('click', viewCalendar);
+$('.view-btn').on('click', viewCalendar);
 
 const viewScheduler = () => {
-    document.location.replace('/scheduler');
+    document.location.replace('/schedule');
+    console.log('hi')
 };
 
-$('.editbtn').on('click', viewScheduler);
+$('.edit-btn').on('click', viewScheduler);

@@ -16,9 +16,10 @@
 
 1. [Project Members](#projectmembers)
 2. [Description](#description)
-3. [Installation](#installation)
-4. [Demo](#demo)
-5. [Questions](#questions)
+3. [User Story](#userstory) 
+4. [Installation](#installation)
+5. [Demo](#demo)
+6. [Questions](#questions)
 
 # Project_Members:
 
@@ -28,10 +29,12 @@
 * Vick Phat
 
 ## Description:
-For this project, we decided to create an employee scheduler. With this application, a user will be able to sign up and then log in to view a calender. Within this calender, it will display the user's work schedule. The individuals who are not managers will only be able to see their respective schedules. If a user logs in and has the credentials of a manager, that individual will be able to access another page which will allow them to create a new schedule for an employee, edit a current employee's schedule or delete an employees schedule.
+For this project, we decided to create an employee scheduler. With this application, a user will be able to sign up and then log in to view a calender. Within this calender, it will display the user's work schedule. The individuals who are not managers will only be able to see their respective schedules. If a user logs in and has the credentials of a manager, that individual will be able to access another page which will allow them to create a new schedule for an employee or delete an employees schedule.
 
 ## User_Story:
-
+I am an owner of a restaurant and I want an application that will allow my employees to sign in and allow them to view their work schedule. 
+I want my managers to be able to schedule the other employees.
+I also want employees who are not managers to not be able to access the scheduling page. 
 
 
 ## Installation:
@@ -48,15 +51,11 @@ To run this application, the following installs will be required:
     * node_modules(npm i)
     * sequelize
 
-
-## Usage:
-
-
 ## Demo:
 
 
 ## Questions: 
-If there are any questions that you may have, please contact me by the following:
+If there are any questions that you may have, please contact one of the following:
 
 * Github: 
     * https://github.com/beau4ta
