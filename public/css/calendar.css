@@ -66,8 +66,14 @@ h1,h3{
     margin: 2px;
 }
 
-.day{
-    width: 100px;
+.day,
+.day2,
+.day3,
+.day4,
+.day5,
+.day6,
+.day7{
+    width: 150px;
     border: solid 1px white;
     color: #9bafd9;
     display: flex;
@@ -94,8 +100,8 @@ h1,h3{
 
 .block{
     background-color: white;
-    height: 70px;
-    width: 100px;
+    height: 150px;
+    width: 200px;
     margin: 2px;
     cursor: pointer;
     display: flex;
@@ -106,7 +112,7 @@ h1,h3{
 
 .block:hover{
     width: 200px;
-    height: 140px;
+    height: 200px;
     
     background-color: #ebf4f5
 }
