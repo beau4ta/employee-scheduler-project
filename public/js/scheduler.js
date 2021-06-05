@@ -1,10 +1,10 @@
-const signupForm = async(event) => {
+const schedulerForm = async(event) => {
     event.preventDefault();
 
     const date = $('#date').val().trim();
-    const start_time = $('#startTime').val().trim();
-    const end_time = $('#EndTime').val().trim();
-    const notes = $('#Notes').val().trim();
+    const start_time = $('#start_time').val().trim();
+    const end_time = $('#end_time').val().trim();
+    const notes = $('#notes').val().trim();
     const work_type = $('#work_type').val().trim();
     const user_id = $('#user_id').val().trim();
 
@@ -24,4 +24,4 @@ const signupForm = async(event) => {
     }
 };
 
-$('.signup-btn').on('click', signupForm);
+$('.scheduler-btn').on('click', schedulerForm);
