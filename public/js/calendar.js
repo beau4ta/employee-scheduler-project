@@ -10,7 +10,6 @@ const yesBtn = document.getElementById('btn_yes');
 let selectedColor, active;
 
 //Event Listeners
-blockContainer.addEventListener('click', selectblock);
 scheduleContainer.addEventListener('click', setColors);
 deselectBtn.addEventListener('click', resetblocks);
 resetBtn.addEventListener('click',openPopup);
