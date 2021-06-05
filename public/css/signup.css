@@ -45,6 +45,14 @@
     height: 35px;
 }
 
+.form-first{
+    height: 35px;
+}
+
+.form-last{
+    height: 35px;
+}
+
 .signup-btn{
     border-radius: 5px;
     background-color: black;
