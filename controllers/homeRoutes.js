@@ -119,6 +119,10 @@ router.get('/signup', (req, res) => {
     res.render('signup');
 });
 
+router.get('/calendar', (req, res) => {
+    res.render('calendar');
+});
+
 // If the user is already logged in, redirect the request to another route
 // doesnt work
 router.get('/', (req, res) => {
