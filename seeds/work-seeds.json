@@ -1,81 +1,25 @@
 [{
-        "date": "12-25-2021",
-        "start_time": "9:00",
-        "end_time": "17:00",
+        "date": "06/06/2021",
+        "start_time": "9:00am",
+        "end_time": "5:00pm",
         "work_type": "Dish Washer",
         "user_id": 3,
-        "notes": "notes 123 123 123"
+        "notes": "Wash dishes."
     },
     {
-        "date": "12-26-2021",
-        "start_time": "9:00",
-        "end_time": "17:00",
-        "work_type": "Dish Washer",
-        "user_id": 3,
-        "notes": "notes 123 123 123"
-    },
-    {
-        "date": "12-27-2021",
-        "start_time": "9:00",
-        "end_time": "17:00",
-        "work_type": "Dish Washer",
-        "user_id": 3,
-        "notes": "notes 123 123 123"
-    },
-    {
-        "date": "12-28-2021",
-        "start_time": "9:00",
-        "end_time": "17:00",
-        "work_type": "Dish Washer",
-        "user_id": 3,
-        "notes": "notes 123 123 123"
-    },
-    {
-        "date": "12-29-2021",
-        "start_time": "9:00",
-        "end_time": "17:00",
-        "work_type": "Dish Washer",
-        "user_id": 3,
-        "notes": "notes 123 123 123"
-    },
-    {
-        "date": "12-25-2021",
-        "start_time": "9:00",
-        "end_time": "17:00",
-        "work_type": "Dish Washer",
+        "date": "06/07/2021",
+        "start_time": "6:00am",
+        "end_time": "2:00pm",
+        "work_type": "Prep",
         "user_id": 2,
-        "notes": "notes 123 123 123"
+        "notes": "Cut veggies for the day."
     },
     {
-        "date": "12-26-2021",
-        "start_time": "9:00",
-        "end_time": "17:00",
-        "work_type": "Dish Washer",
-        "user_id": 2,
-        "notes": "notes 123 123 123"
-    },
-    {
-        "date": "12-27-2021",
-        "start_time": "9:00",
-        "end_time": "17:00",
-        "work_type": "Dish Washer",
-        "user_id": 2,
-        "notes": "notes 123 123 123"
-    },
-    {
-        "date": "12-28-2021",
-        "start_time": "9:00",
-        "end_time": "17:00",
-        "work_type": "Dish Washer",
-        "user_id": 2,
-        "notes": "notes 123 123 123"
-    },
-    {
-        "date": "12-29-2021",
-        "start_time": "9:00",
-        "end_time": "17:00",
-        "work_type": "Dish Washer",
-        "user_id": 2,
-        "notes": "notes 123 123 123"
+        "date": "06/08/2021",
+        "start_time": "9:00am",
+        "end_time": "5:00pm",
+        "work_type": "Grill Cook",
+        "user_id": 1,
+        "notes": "Cook food for the restaurant."
     }
 ]
