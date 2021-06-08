@@ -1,16 +1,16 @@
 # Employee-Scheduler-Project
 
 ![LICENSE](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge&logo=appveyor.svg)<br>
-![JS](https://img.shields.io/badge/JavaScript-20.6%25-informational?style=for-the-badge&logo=appveyor.svg)
-![HTML](https://img.shields.io/badge/HTML-21.6%25-informational?style=for-the-badge&logo=appveyor.svg)
-![CSS](https://img.shields.io/badge/CSS-50.4%25-informational?style=for-the-badge&logo=appveyor.svg)
-![HANDLEBARS](https://img.shields.io/badge/HandleBars-7.4%25-informational?style=for-the-badge&logo=appveyor.svg)<br>
+![JS](https://img.shields.io/badge/JavaScript-26.7%25-informational?style=for-the-badge&logo=appveyor.svg)
+![CSS](https://img.shields.io/badge/CSS-56.3%25-informational?style=for-the-badge&logo=appveyor.svg)
+![HANDLEBARS](https://img.shields.io/badge/HandleBars-17%25-informational?style=for-the-badge&logo=appveyor.svg)<br>
 ![NODE](https://img.shields.io/badge/Node.js-important?style=for-the-badge&logo=appveyor.svg)
 ![EXPRESS](https://img.shields.io/badge/Express.js-important?style=for-the-badge&logo=appveyor.svg)
 ![SEQUELIZE](https://img.shields.io/badge/Sequelize-important?style=for-the-badge&logo=appveyor.svg)
 ![MYSQL](https://img.shields.io/badge/MySQL-important?style=for-the-badge&logo=appveyor.svg)
 ![DOTENV](https://img.shields.io/badge/Dotenv-important?style=for-the-badge&logo=appveyor.svg)
 ![BCRYPT](https://img.shields.io/badge/Bcrypt-important?style=for-the-badge&logo=appveyor.svg)
+![REGEX](https://img.shields.io/badge/Regex-important?style=for-the-badge&logo=appveyor.svg)
 
 # Table of Contents 
 
@@ -18,8 +18,10 @@
 2. [Description](#description)
 3. [User Story](#userstory) 
 4. [Installation](#installation)
-5. [Demo](#demo)
-6. [Questions](#questions)
+5. [Deployment](#deployment)
+6. [New Technology](#newtechnology)
+7. [Future Development](#futuredevelopment)
+8. [Questions](#questions)
 
 # Project_Members:
 
@@ -29,12 +31,12 @@
 * Vick Phat
 
 ## Description:
-For this project, we decided to create an employee scheduler. With this application, a user will be able to sign up and then log in to view a calender. Within this calender, it will display the user's work schedule. The individuals who are not managers will only be able to see their respective schedules. If a user logs in and has the credentials of a manager, that individual will be able to access another page which will allow them to create a new schedule for an employee or delete an employees schedule.
+For this project, we decided to create an employee scheduler. With this application, a user will be able to sign up and then log in to view a calender. Within this calender, it will display the user's work schedule. The individuals who are not managers will only be able to see their respective schedules. If a user logs in and has the credentials of a manager, that individual will be able to access another page which will allow them to create a new schedule for an employee.
 
 ## User_Story:
-I am an owner of a restaurant and I want an application that will allow my employees to sign in and allow them to view their work schedule. 
-I want my managers to be able to schedule the other employees.
-I also want employees who are not managers to not be able to access the scheduling page. 
+    * I am an owner of a restaurant and I want a simple application that will allow my employees to sign in and allow them to view their work schedule. 
+    * I want my managers to be able to set a schedule for themselves and also the other employees.
+    * I also want employees who are not managers to not be able to access the scheduling page. 
 
 
 ## Installation:
@@ -48,14 +50,28 @@ To run this application, the following installs will be required:
     * express-session
     * mysql2
     * node.js
-    * node_modules(npm i)
+    * node_modules
     * sequelize
 
-## Demo:
+## Deployment:  
+The following link will take you to our deployed application:
 
+## New_Technology
+We were tasked with finding and using at least one new library, package, or technology that we haven’t discussed yet. We found and decided to use Regex. 
+
+The following is a snippet of our regex code:
+
+<img src="assets/regex.JPG" alt="regex snippet"/>
+
+## Future_Development
+    * Edit button, delete button and a clear schedule button. With these buttons, a manager would be able to change an employees schedule after it has already been set.
+
+    * Functionality to add notes to the calendar which will give the ability to add quick reminders for managers and owners.
+
+    * Toggle button on the calendar page to be able to toggle from one week to the next so that the employees can check their schedule for the week of and following week.  
 
 ## Questions: 
-If there are any questions that you may have, please contact one of the following:
+If there are any questions that you may have, please contact one of the following group members:
 
 * Github: 
     * https://github.com/beau4ta
@@ -66,6 +82,7 @@ If there are any questions that you may have, please contact one of the followin
 * Email: 
     * beaufortier13@gmail.com
     * noahhelton98@gmail.com
+    * kyoung15@mail.bw.edu
     * vickphat@gmail.com 
 
 

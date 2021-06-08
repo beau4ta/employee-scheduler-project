@@ -18,7 +18,7 @@ router.post('/', async (req, res) => {
     }
 });
 
-// TODO GET to find all users
+// Request to find all users
 router.get('/', (req, res) => {
     User.findAll({
 
@@ -39,23 +39,7 @@ router.get('/', (req, res) => {
         });
 });
 
-// // TODO: Create POST to create new user 
-// router.post('/', (req, res) => {
-//     // create a new user
-//     User.create({
-//         first_name: req.body.first_name,
-//         last_name: req.body.last_name,
-//         email: req.body.email,
-//         password: req.body.email
-//     })
-//         .then(userData => res.json(userData))
-//         .catch(err => {
-//             console.log(err);
-//             res.status(500).json(err);
-//         });
-// });
-
-// TODO Create DELETE to remove user
+// Request to remove a user
 router.delete('/:id', (req, res) => {
     // delete a category by its `id` value
     User.destroy( {
@@ -71,6 +55,7 @@ router.delete('/:id', (req, res) => {
     })
   });
 
+//   Checks user's credentials
 router.post('/login', async (req, res) => {
     try {
         const userData = await User.findOne({ where: { email: req.body.email } });
@@ -103,6 +88,7 @@ router.post('/login', async (req, res) => {
     }
 });
 
+// Logs users out
 router.post('/logout', (req, res) => {
     if (req.session.logged_in) {
         req.session.destroy(() => {
