@@ -55,6 +55,7 @@ To run this application, the following installs will be required:
 
 ## Deployment:  
 The following link will take you to our deployed application:
+* https://employee-scheduler-project.herokuapp.com/
 
 ## New_Technology
 We were tasked with finding and using at least one new library, package, or technology that we haven’t discussed yet. We found and decided to use Regex. 
