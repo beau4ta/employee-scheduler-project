@@ -2,12 +2,13 @@ const router = require('express').Router();
 const { Work, User } = require('../models');
 const withAuth = require('../utils/auth');
 
-// Homepage
+// Home page
 router.get('/', async (req, res) => {
   res.render('home')
 });
 
-// Calendar
+// Calendar page
+// Use withAuth middleware to prevent access to route if not logged in
 router.get('/calendar', withAuth, async (req, res) => {
   try {
 
@@ -31,7 +32,7 @@ router.get('/calendar', withAuth, async (req, res) => {
   }
 });
 
-// Use withAuth middleware to prevent access to route
+// Use withAuth middleware to prevent access to route if not logged in
 router.get('/dashboard', withAuth, async (req, res) => {
   try {
     // Find the logged in user based on the session ID
@@ -51,10 +52,10 @@ router.get('/dashboard', withAuth, async (req, res) => {
   }
 });
 
-// Use withAuth middleware to prevent access to route
+// Use withAuth middleware to prevent access to route if not logged in
 router.get('/schedule', withAuth, async (req, res) => {
   try {
-    // Find the logged in user based on the session ID
+    // Find all users
     const userData = await User.findAll({
       attributes: { exclude: ['password'] },
       include: [
@@ -65,12 +66,13 @@ router.get('/schedule', withAuth, async (req, res) => {
     });
     // Serialize data so the template can read it
     const user = userData.map((user) => user.get({ plain: true }));
-    // Pass serialized data and session flag into template
+    
     res.render('scheduler', {
       ...user,
       logged_in: true,
       is_manager: true
     });
+    // Shows employees data 
     console.log(userData);
     console.log(user[0].works[0]);
     console.log(user[1].works[0]);

@@ -38,7 +38,6 @@ User.init({
             validatePassword: function(password) {
                 if (!(/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/.test(password))) {
                     throw new Error('The password must contain at least 8 characters including at least one uppercase, one lowercase, one number and one special character.');
-                    //"^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$"
                 }
             }
         }
