@@ -58,7 +58,9 @@ The following link will take you to our deployed application:
 * https://employee-scheduler-project.herokuapp.com/
 
 ## New_Technology
-We were tasked with finding and using at least one new library, package, or technology that we haven’t discussed yet. We found and decided to use Regex. 
+We were tasked with finding and using at least one new library, package, or technology that we haven’t discussed yet. We decided to use nodemon. Nodemon is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected.
+
+We also decided to use Regex. Regex is also known as regular expression. Regular expressions are used to perform pattern-matching and "search-and-replace" functions on text and we used it for our password validation. 
 
 The following is a snippet of our regex code:
 
